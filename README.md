@@ -1,2 +1,2 @@
-# Tempo-e-C-digo-do-projeto
-Tempo e Código do projeto de IC
+# Arquivos da IC
+Arquivos de texto da Iniciação Científica coom o Professor Rinaldo
