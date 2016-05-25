@@ -1,0 +1,46 @@
+﻿				Tabela de tempo e linhas de código
+
+
+Banco de Dados
+Tempo gasto
+Linhas de Código
+Caché Intersystems
+76,52 minutos
+633
+MongoDB
+136,48 minutos
+721
+Hibernate
+126,03 minutos
+607
+MySQL com JDBC
+184,81 mintos
+1115
+
+
+
+
+
+					MySQL com jdbc
+
+
+	Para início do desenvolvimento dos experimentos, a tecnologia escolhida foi o banco de dados MySQL utilizando o conector JDBC para aplicações Java.
+	O  tema escolhido para o desenvolvimento das aplicações foi um gerenciador de coleta de lixo, onde existe um coletador, um ponto de coleta, os materias que serão coletados pelo coletador, uma coleta que reúne o coletador, seu ponto de coleta além de Itens de Coleta que registram a quantidade do material coletado e a coleta a que pertencem.
+	Para a criação da aplicação Java com o sistema gerenciador de banco de dados MySQL, a primeira coisa a se fazer é criar as tabelas do banco de dados Coleta. 
+	A tabela de Agente Ambiental possui os seguintes campos: código do agente, nome, cpf, data de nascimento e endereço. A tabela de Ponto de Coleta possui os campos: código do Ponto, nome, endereço, cidade, estado e data de retirada. A tabela de Material possui os atributos: código do material, nome, tipo, tempo de decomposição e descrição. Os atributos presentes na tabela de Coleta são: código da coleta, código do agente, código do ponto e data da coleta. Já a tabela de Itens de Coleta possui os atributos: código do item, código do material, código da coleta e a quantidade de materias.
+	A tarefa após fazer a criação do banco de dados, é realizar a conexão com o SGBD MySQL. Para isso é necessário baixar um conector e adicioná-lo como biblioteca da aplicação Java. A criação de classes Java para cada tabela do banco de dados se faz necessária devido ao fato de os atributos da classe corresponderem com campos das tabelas. Sendo assim, uma classe para cada tabela do SGBD deve ser criada e os métodos CRUD devem ser implementados em cada uma dessas classes.
+	O método Insert foi criado em cada classe com o propósito de permitir que objetos de cada classe sejam persistidos no SGBD MySQL com a ajuda do conector. Já o método Update tem o intuito de fazer com os objetos já persistidos no SGBD sejam alterados, dessa maneira se algum dado tenha sido persistido de maneira errônea, é possível alterar esse dado e persisti-lo novamente.
+	Para fazer a remoção de objetos persistidos, o método Delete foi implementado, o método Select permite que os objetos sejam recuperados para posterior manipulação pelo usuário  ou desenvolvedor. O método Select vem a ser um dos métodos mais utilizados pois com ele é possível recuperar os objetos e mostrá-los da maneira que for mais indicada para cada caso. 
+
+
+
+
+
+
+
+
+
+
+
+
+
